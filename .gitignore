@@ -1,0 +1,14 @@
+# Cartella generata dalla build (Netlify la ricrea a ogni pubblicazione)
+dist/
+node_modules/
+
+# Impostazioni locali di Claude Code
+.claude/settings.local.json
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.env
+.netlify/

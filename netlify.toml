@@ -1,0 +1,24 @@
+# Configurazione Netlify per il sito TIMIA.
+# Netlify esegue la build a ogni push su GitHub e pubblica la cartella dist/.
+
+[build]
+  command = "node build.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Header di sicurezza (equivalenti a quelli del .htaccess per Apache).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# La pagina di conferma del form non va indicizzata.
+[[headers]]
+  for = "/contatti/grazie/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

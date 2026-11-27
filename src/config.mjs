@@ -11,17 +11,16 @@ export const site = {
   // Google Tag Manager: inserire l'ID del contenitore (es. 'GTM-ABC1234').
   // Viene caricato SOLO dopo il consenso ai cookie statistici o di marketing.
   gtmId: '',
-  // Destinazione del form preventivo. Su Netlify le richieste sono raccolte da Netlify Forms
-  // (form name="preventivo") e questa è la pagina di conferma mostrata a chi invia senza JavaScript.
-  // Su un hosting PHP tradizionale usare invece '/invia-richiesta.php' (vedi /form-handler).
-  formEndpoint: '/contatti/grazie/',
-  // Tempo di risposta mostrato nel messaggio di conferma del form — DA VERIFICARE con l'azienda.
+  // Nome del modulo su Netlify Forms: le richieste arrivano in Netlify → Forms → "richiesta-offerta"
+  // e vengono inoltrate via email agli indirizzi impostati in Forms → Form notifications.
+  formName: 'richiesta-offerta',
+  // true = sul sito compare l'avviso "prezzi di esempio". Metterlo a false dopo aver inserito
+  // gli importi reali in src/data/rifiuti.mjs e src/data/offerte.mjs.
+  prezziDiEsempio: true,
+  // Tempo di risposta mostrato dopo l'invio — DA VERIFICARE con l'azienda.
   responseTime: 'entro 1 giorno lavorativo',
   // Immagine di condivisione social 1200×630 (es. '/assets/img/og-timia.jpg'). Vuoto = non inserita.
   ogImage: '',
-  // Foto di sfondo dell'apertura in home (consigliato 2400×1400, WebP/JPG sotto i 400 KB),
-  // es. '/assets/img/foto/hero-piazzale.webp'. Vuoto = segnaposto "FOTO REALE DA INSERIRE".
-  heroImage: '',
   // Aumentare questo numero se cambiano le finalità dei cookie: il banner verrà riproposto a tutti.
   consentVersion: 1,
   // Data di ultimo aggiornamento di privacy e cookie policy.

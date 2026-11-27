@@ -19,6 +19,6 @@
 
 # La pagina di conferma del form non va indicizzata.
 [[headers]]
-  for = "/contatti/grazie/*"
+  for = "/grazie/*"
   [headers.values]
     X-Robots-Tag = "noindex"

@@ -3,6 +3,19 @@
 // - servizi / settori (griglia 48, tratto 2)
 
 const ui = {
+  minus: '<path d="M5 12h14"/>',
+  trash: '<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
+  leaf: '<path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19l8-8"/>',
+  recycle: '<path d="M7 19H4.5a1.5 1.5 0 0 1-1.3-2.2L6 12"/><path d="M9.5 8.5L12 4a1.5 1.5 0 0 1 2.6 0L17 8.5"/><path d="M17 19h2.5a1.5 1.5 0 0 0 1.3-2.2L18 12"/><path d="M14 19H8M4 13l2-1 1 2M15 6.5l2 2 2-1M15 21l-1-2 1-2"/>',
+  box: '<path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9M7.8 5.3l8.4 4.5"/>',
+  brick: '<rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 9.7h18M3 14.3h18M9 5v4.7M15 5v4.7M12 9.7v4.6M6 9.7v4.6M18 9.7v4.6M9 14.3V19M15 14.3V19"/>',
+  metal: '<path d="M4 17l3-9h10l3 9z"/><path d="M2.5 20h19M8.5 8l1-3h5l1 3"/>',
+  plug: '<path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v4"/>',
+  drop: '<path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3z"/><path d="M9 15a3 3 0 0 0 3 3"/>',
+  more: '<circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/><rect x="3" y="5" width="18" height="14" rx="3"/>',
+  spark: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/>',
+  doc: '<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/>',
+  hand: '<path d="M8 13V6.5a1.5 1.5 0 0 1 3 0V12M11 11V4.5a1.5 1.5 0 0 1 3 0V12M14 11V6.5a1.5 1.5 0 0 1 3 0V14a7 7 0 0 1-7 7h-.5a6 6 0 0 1-5-2.7L2.8 15a1.5 1.5 0 0 1 2.4-1.8L8 16"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   arrowDown: '<path d="M12 5v14M6 13l6 6 6-6"/>',
   arrowUp: '<path d="M12 19V5M6 11l6-6 6 6"/>',

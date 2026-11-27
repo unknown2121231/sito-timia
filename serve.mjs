@@ -42,7 +42,7 @@ createServer(async (req, res) => {
           res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
           res.end('<!doctype html><title>OK</title>');
         } else {
-          res.writeHead(303, { Location: '/contatti/grazie/' });
+          res.writeHead(303, { Location: '/grazie/' });
           res.end();
         }
       }, 700);
